@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>exercise_1</title>
+</head>
+<body>
+	<style>
+		table, th, td {border: 1px solid;}
+td {	
+	font-size: 1.25rem;
+	padding: .625rem;
+	text-align: center;
+	font-weight: 700;
+	color: #c1121f;
+	background-color: #f4e285;
+}
+	</style>
+	<script>
+		let numberOne = parseFloat(prompt('Перше значення', '0'))
+		let numberTwo = parseFloat(prompt('Друге значення', '0'))
+		document.write(`<table>
+	<tr>
+		<td>a+b</td>
+		<td>a*b</td>
+		<td>a/b</td>
+	</tr>
+	<tr>
+	<td>${numberOne + numberTwo}</td>
+	<td>${numberOne * numberTwo}</td>
+	<td>${(numberOne / numberTwo).toFixed(2)}</td>
+	</tr>
+</table>`)
+	</script>
+</body>
+</html>

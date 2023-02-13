@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise 3</title>
+</head>
+<body>
+	<style>
+		body {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; background-color: #faf3dd; font-size: 20px;}
+		h3 { color: #c1121f;}
+		h3 span {color: #003566;}
+	</style>
+	<script>
+		let priceUnit = parseFloat(prompt('Enter Price Unit'))
+		let numberUnit = parseInt(prompt('Enter Number of Units'))
+		let totalPrice = priceUnit * numberUnit
+		const TAX_PRICE = totalPrice * 0.05
+		document.write(`<h3>Total Price: <span>${totalPrice}</span></h3>`)
+		document.write(`<h3>Tax 5%: <span>${(TAX_PRICE).toFixed(2)}</span></h3>`)
+	</script>
+</body>
+</html>

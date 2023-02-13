@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise 0</title>
+</head>
+<body>
+	<style>
+		body {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; background-color: #faf3dd; font-size: 20px;}
+		h3 { color: #c1121f;}
+		h3 span {color: #003566;}
+	</style>
+	<script>
+		let a = parseFloat(prompt('a=', '0'))
+		let b = parseFloat(prompt('b=', '0'))
+		let c = parseFloat(prompt('c=', '0'))
+		document.write(`<h3>a + 12 + b = <span>${a + 12 + b}</span></h3>`)
+		document.write(`<h3>&#8730(a + b / 2a)= <span>${Math.sqrt((a + b) / 2 * a)}</span></h3>`)
+		document.write(`<h3>&#8731(a + b)c = <span>${Math.cbrt((a + b) * c)}</span></h3>`)
+		document.write(`<h3>sin(a / -b)= <span>${Math.sin(a / - b)}</span></h3>`)
+	</script>
+</body>
+</html>

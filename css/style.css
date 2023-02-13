@@ -1,0 +1,31 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Raleway:regular,700&display=swap);
+body {
+	font-family: "Raleway",serif;
+	font-size: 1.125rem;
+	color: #353535;
+	background-color: #d9d9d9;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.page__list {
+	padding-top: 6.25rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.25rem;
+	line-height: 2;
+}
+.page__link {
+	text-transform: uppercase;
+	color: #2d6a4f;
+	font-weight: 700;
+	transition: all 0.3s ease 0s;
+}
+.page__link:hover {
+	color: crimson;
+	transform: translate(0px, -20px);
+}

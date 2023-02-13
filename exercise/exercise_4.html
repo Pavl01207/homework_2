@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise 4</title>
+</head>
+<body>
+	<style>
+		body {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; background-color: #faf3dd; font-size: 20px;}
+		h3 { color: #c1121f;}
+		h3 span {color: #003566;}
+	</style>
+	<script>
+		let lengthСm = parseInt(prompt('Enter length in cm'))
+		const LENGTH_IN_METER = 1e2
+		const LENGTH_IN_KILOMETR = 1e3
+		const lengthInMetr = lengthСm / LENGTH_IN_METER
+		const lengthInKilometr = lengthСm / LENGTH_IN_KILOMETR
+		document.write(`<h3>Length in metr: <span>${lengthInMetr}</span> m<br>Length in kilometr: <span>${lengthInKilometr}</span> kl</h3>`)
+	</script>
+</body>
+</html>

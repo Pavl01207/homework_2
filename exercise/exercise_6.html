@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise 6</title>
+</head>
+<body>
+	<style>
+		body {display: flex; flex-direction: column; background-color: #faf3dd; font-size: 20px; border: 2px solid #003566; padding: 10px; max-width: 400px;}
+		p { color: #c1121f; border-bottom: 2px dotted #003566;}
+		P:last-child { align-self: flex-end;}
+		p span {color: #003566; font-weight: 700;}
+		p sub {color: #003566;}
+	</style>
+	<script>
+		let numberOneUnit = parseInt(prompt('Кількість першого товару'))
+		const PRICE_FIRST_UNIT = parseFloat(prompt('Вартість першого товару'))
+		let numberSecondUnit = parseInt(prompt('Кількість другого товару'))
+		const PRICE_SECOND_UNIT = parseFloat(prompt('Вартість другого товару'))
+		let numberThirdUnit = parseInt(prompt('Кількість третього товару'))
+		const PRICE_THIRD_UNIT = parseFloat(prompt('Вартість третього товару'))
+		let totalPriceFirstUnit = numberOneUnit * PRICE_FIRST_UNIT
+		let totalPriceSecondUnit = numberSecondUnit * PRICE_SECOND_UNIT
+		let totalPriceThirdUnit = numberThirdUnit * PRICE_THIRD_UNIT
+		let totalPriceUnits = totalPriceFirstUnit + totalPriceSecondUnit +totalPriceThirdUnit
+		document.write(`<p>Перший товар<br><span>${numberOneUnit}</span> <sub>шт</sub> &#xD7; <span>${PRICE_FIRST_UNIT}</span> <sub>грн</sub> = <span>${totalPriceFirstUnit}</span> <sub>грн</sub></p>`)
+		document.write(`<p>Другий товар<br><span>${numberSecondUnit}</span> <sub>шт</sub> &#xD7; <span>${PRICE_SECOND_UNIT}</span> <sub>грн</sub> = <span>${totalPriceSecondUnit}</span> <sub>грн</sub></p>`)
+		document.write(`<p>Третій товар<br><span>${numberThirdUnit}</span> <sub>шт</sub> &#xD7; <span>${PRICE_THIRD_UNIT}</span> <sub>грн</sub> = <span>${totalPriceThirdUnit}</span> <sub>грн</sub></p>`)
+		document.write(`<p>Загалом: <span>${totalPriceUnits}</span> <sub>грн</sub></p>`)
+	</script>
+</body>
+</html>
